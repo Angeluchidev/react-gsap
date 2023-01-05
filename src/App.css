@@ -1,0 +1,95 @@
+.caja{
+  
+  
+  
+  display: grid;
+  gap: 2rem ;
+  grid-auto-rows: 25rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  
+}
+
+.item{
+  transition: all 0.3s ease-in-out;
+  background: rgb(111, 161, 219);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.item:hover{
+  background-color: blueviolet;
+}
+
+.Titulo{
+  color: #444;
+  opacity: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+background: rgb(229, 226, 226);
+  width: 150px;
+
+}
+
+
+
+header {
+  
+  background: rgb(111, 161, 219);
+  width: 100%;
+  clear: both;
+  content:'';
+  display: table;
+}
+
+.menu {
+  padding:30px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+nav img {
+  width: 120px;
+  height: 50px;
+  float: left;
+  padding: 8px;
+
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 75px;
+  padding: 12px 0;
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+nav ul li a::before {
+  display: block;
+  content: '';
+  width: 0%;
+  background: #444;
+  height: 5px;
+  top:0;
+  position: absolute;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
